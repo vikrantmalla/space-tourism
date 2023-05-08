@@ -41,3 +41,44 @@ a {
 .logo {
   height: 30px;
 }
+
+.home-page-content h1 {
+  font-size: 50px;
+}
+
+.home-page-content h2 {
+  font-size: 20px;
+}
+
+.home-page-content p {
+  font-size: 18px;
+}
+
+#col2 {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.explore-link,
+.explore-link:hover {
+  text-decoration: none;
+  color: #0b0d17;
+}
+
+.home-button:hover {
+  box-shadow: 0px 0px 0px 40px #979797;
+  transition: 0.5s;
+}
+
+.home-button {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+}
+
+.home-button p {
+  line-height: 150px;
+  font-size: 20px;
+  font-family: "Bellefair", serif;
+}
