@@ -4,7 +4,7 @@ import { getHomePageData } from "@/service/homepage";
 import HomePage from "@/components/HomePage";
 
 export const getStaticProps = async () => {
-  const homes = await getHomePageData();
+  const homes: PageData.IndexPageData = await getHomePageData();
   return {
     props: { homes }
   };
