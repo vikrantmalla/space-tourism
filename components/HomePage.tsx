@@ -3,13 +3,13 @@ import { PageData } from "@/types/data";
 
 const HomePage = ({ homes }: PageData.IndexPageData) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center mt-32">
+    <div className="grid grid-cols-1 lg:grid-cols-2 justify-center mt-32">
       <div className="text-center lg:text-left lg:p-4">
         {homes.map((about) => (
           <div key={about.id} className="home-page-content">
-            <h2 className="text-white">{about.subheading}</h2>
+            <h2 className="text-white mb-3">{about.subheading}</h2>
             <h1 className="text-white uppercase">{about.heading}</h1>
-            <p className="text-white">{about.description}</p>
+            <p className="text-white mt-3">{about.description}</p>
           </div>
         ))}
       </div>
