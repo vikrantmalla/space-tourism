@@ -1,6 +1,7 @@
 import React from 'react'
 import { getDestinationPageData } from '@/service/destinationpage';
 import { PageData } from '@/types/data';
+import Destination from '@/components/Destination';
 
 
 export const getStaticProps = async () => {
@@ -12,7 +13,9 @@ export const getStaticProps = async () => {
 
 const destination = ({destinations}: PageData.DestinationPageData) => {
   return (
-    <div>destination</div>
+    <>
+    <Destination destinations={destinations}/>
+    </>
   )
 }
 
